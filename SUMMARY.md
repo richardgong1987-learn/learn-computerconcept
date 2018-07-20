@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-* [bit operator](content/binarry.md)
+* [bit operator 位操作](content/binarry.md)
 
 * [Introduction](README.md)
 
