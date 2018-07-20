@@ -97,11 +97,19 @@ RGB色素:
 
 获取颜色的值如下：
 
-//Now, we only want red colour
-redColour = (redColour >> 24) & 0xFF;  /* This now returns a red colour between 0x00 and 0xFF.
+    //Now, we only want red colour
+    redColour = (redColour >> 16) & 0xFF;  /* This now returns a red colour between 0x00 and 0xFF.
 
-
+1100 1100 1101  1101  1110  1110 向右往16位后为：0000 0000 0000 0000 1100 1100
+  
+    
+      ... 0000 0000 0000  0000  1100 1100
+    &    
+      ... 0000 0000 0000  0000  1111  1111
+    ------------------------------------------
+      ... 0000 0000 0000  0000  1100 1100
+  
+  
+  
 同理，保留蓝部分
-
-
 
