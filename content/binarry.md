@@ -157,4 +157,24 @@ RGB色素:
           
 ````
 
+## - 关于 1 >> 32 == 1的问题
+
+ n >> m,
+  
+ it only looks at the last five bits of m 
+ 
+ so any number greater than 31 will be reduced to that number mod 32. So,
+  
+ (256 >> 37) == 8 is true.
+ 
+ * 在移位运算中,不管是左移还是右移。
+ 
+ 如果移动的位置大于31，就会被 32 **取模** ，然后，再进行移动
+ 
+ 所以这里 257 >> 37 == 257 >> (37 % 32) true
+ 
+ 永远都是**取模32**
+  
+ 
+ 
 
