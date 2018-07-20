@@ -15,11 +15,24 @@
     
 注意：奇数不能套用本公式
 
-在java hash算法中，可以简写成：
+在java HashMap算法中，可以简写成：
 
     num & (length - 1)
 
 
 ````
 
+## HashMap的初始化大小16和下载因子0.75f的原因如下：
+```html
+    initial capacity of hashmap * Load factor of hashmap =  16 * 0.75 = 12. 
+    
+    initial capacity of hashmap * Load factor of hashmap =  32 * 0.75 = 24.
+    
+    initial capacity of hashmap * Load factor of hashmap =  64 * 0.75 = 48.
+    
+    initial capacity of hashmap * Load factor of hashmap =  128 * 0.75 = 96.
+    
+    ....
+ 
+```
 
