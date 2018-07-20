@@ -2,8 +2,10 @@ import java.util.HashMap;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(tableSizeFor(100));
+        System.out.println(tableSizeFor(14));
     }
+
+    static final int MAXIMUM_CAPACITY = 1 << 30;
 
     static final int tableSizeFor(int cap) {
         int n = cap - 1;
@@ -12,7 +14,6 @@ public class Test {
         n |= n >>> 4;
         n |= n >>> 8;
         n |= n >>> 16;
-        return n;
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
     }
-
 }
