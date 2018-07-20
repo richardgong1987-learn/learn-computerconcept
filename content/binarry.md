@@ -117,7 +117,7 @@ RGB色素:
 
       ... 0000 0000 0000  0000  1100 1100
     &    
-      ... 0000 0000 0000  0000  1111  1111
+      ... 0000 0000 0000  0000  1111 1111
     ------------------------------------------
       ... 0000 0000 0000  0000  1100 1100
 
@@ -125,5 +125,36 @@ RGB色素:
   
   
   
-同理，保留蓝部分
+同理，保留绿色部分
+
+````html
+
+    redColour = 0xCCDDEE;
+    
+    byte redColour = imagePixel & 0x00FF00; /*Bitmasking with AND operator */
+
+
+取值
+   
+   redColour = (redColour >> 8) & 0xFF;
+          
+     
+````
+
+
+同理，保留蓝色部分
+
+````html
+
+    redColour = 0xCCDDEE;
+    
+    byte redColour = imagePixel & 0x0000FF; /*Bitmasking with AND operator */
+
+
+取值
+   
+   redColour = redColour & 0xFF;
+          
+````
+
 
