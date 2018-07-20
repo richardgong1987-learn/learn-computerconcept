@@ -41,7 +41,7 @@
 所以，只要用 & 操作，即可取出 最低4位的保存数据
 
   0 1 1 1 0 0 1 0 = 114
-&                 Bitmask of 0x0F to find out the lower nibble
+&                        Bitmask of 0x0F to find out the lower nibble
   0 0 0 0 1 1 1 1 = 15 
  -----------------
   0 0 0 0 0 0 1 0 = 2
