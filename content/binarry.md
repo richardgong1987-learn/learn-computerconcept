@@ -68,5 +68,32 @@
   
 ```` 
 
-## -- 颜色操作
+## -- 颜色RGB色素操作
+
+RGB色素:
+
+\#CCDDEE
+
+这里R,G,B表示红绿蓝。各位两位16进制数
+
+在这里CC就是红，DD绿，EE蓝
+
+如，只保留红色值：
+
+//To only have red
+byte redColour = imagePixel & 0xFF0000; /*Bitmasking with AND operator */
+
+
+  1100 1100 1101  1101  1110  1110 = 13426158 = 0xCCDDEE 
+&
+  1111 1111 0000  0000  0000  0000 = 16711680 = 0xff0000 
+---------------------------------------------------------------
+  1100 1100 0000  0000  0000  0000 = 13369344 = 0xCC0000  
+
+
+//Now, we only want red colour
+redColour = (redColour >> 24) & 0xFF;  /* This now returns a red colour between 0x00 and 0xFF.
+
+
+
 
