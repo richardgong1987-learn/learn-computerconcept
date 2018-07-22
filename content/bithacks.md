@@ -5,6 +5,8 @@
 
 http://graphics.stanford.edu/~seander/bithacks.html
  
+https://www.geeksforgeeks.org/find-ith-index-character-in-a-binary-string-obtained-after-n-iterations-set-2/
+
 
 ```html
 
