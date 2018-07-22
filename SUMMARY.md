@@ -6,3 +6,8 @@
 
 * [hash算法](content/hash.md)
 
+
+* [黑客常用的位运算](content/bithacks.md)
+
+
+
