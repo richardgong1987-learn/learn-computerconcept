@@ -1,6 +1,11 @@
-var a = 1230123;
-var b = 1234555;
-var c = 5865683;
-var hash = a ^ b ^ c;
+var x = 5;
+var y = 9;
 
-console.log(hash)
+
+var r = y ^ ((x ^ y) & -(x < y));//min
+
+console.log(r);
+
+var r = x ^ ((x ^ y) & -(x < y));//max
+
+console.log(r);
